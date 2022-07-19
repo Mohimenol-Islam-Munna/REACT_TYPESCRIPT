@@ -10,6 +10,7 @@ import Heading from "./components/Heading";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import StyleContainer from "./components/StyleContainer";
+import StateComponent from "./components/StateComponent";
 
 function App() {
   const names = [
@@ -32,7 +33,7 @@ function App() {
   ];
 
   return (
-    <div className="App">
+    <div className="App mb-16">
       <h2>React Typescript</h2>
       <Greet name="Mohimenol Munna" count={18} isAdmin={true} />
       <Person name={{ firstName: "Mohimenol Islam", lastName: "Munna" }} />
@@ -65,6 +66,8 @@ function App() {
           color: "white",
         }}
       />
+
+      <StateComponent />
     </div>
   );
 }
