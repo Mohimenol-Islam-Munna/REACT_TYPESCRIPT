@@ -1,6 +1,5 @@
+import { Name } from "./Person.types";
+
 export type PersonListProps = {
-  names: {
-    firstName: string;
-    lastName: string;
-  }[];
+  names: Name[];
 };
