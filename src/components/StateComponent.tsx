@@ -8,6 +8,9 @@ type User = {
 function StateComponent() {
   const [user, setUser] = useState<User | null>(null);
 
+  //   type assertion
+  // const [user, setUser] = useState({} as User);
+
   const addUserHandler = () => {
     console.log("add user handler");
     setUser({ name: "Md Munna", email: "munna.cse.pust@gmail.com" });
