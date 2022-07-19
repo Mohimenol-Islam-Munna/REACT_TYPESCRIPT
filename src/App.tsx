@@ -31,11 +31,13 @@ function App() {
   return (
     <div className="App">
       <h2>React Typescript</h2>
-      <Greet name="Mohimenol Munna" count={18} isAdmin={false} />
+      <Greet name="Mohimenol Munna" count={18} isAdmin={true} />
       <Person name={{ firstName: "Islam", lastName: "Munna" }} />
       <PersonList names={names} />
       <Status status="success" />
       <Heading>Heading Childreen Props</Heading>
+      {/* for optional props  */}
+      <Greet name="Mohimenol Munna" isAdmin={true} />
     </div>
   );
 }
