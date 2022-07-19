@@ -7,6 +7,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import Heading from "./components/Heading";
+import Button from "./components/Button";
 
 function App() {
   const names = [
@@ -38,6 +39,13 @@ function App() {
       <Heading>Heading Childreen Props</Heading>
       {/* for optional props  */}
       <Greet name="Mohimenol Munna" isAdmin={true} />
+
+      <Button
+        changeNumber={(event, id) => {
+          console.log("change number handler", event);
+          console.log("params ", id);
+        }}
+      />
     </div>
   );
 }

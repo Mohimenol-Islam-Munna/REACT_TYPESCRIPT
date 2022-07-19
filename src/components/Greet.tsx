@@ -1,6 +1,7 @@
 import React from "react";
 type GreetProps = {
   name: string;
+  // optional props 
   count?: number;
   isAdmin: boolean;
 };
