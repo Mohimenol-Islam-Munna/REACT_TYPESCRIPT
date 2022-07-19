@@ -9,6 +9,7 @@ import Status from "./components/Status";
 import Heading from "./components/Heading";
 import Button from "./components/Button";
 import Input from "./components/Input";
+import StyleContainer from "./components/StyleContainer";
 
 function App() {
   const names = [
@@ -51,6 +52,17 @@ function App() {
       <Input
         inputTextHandler={(event) => {
           console.log(event.target.value);
+        }}
+      />
+
+      <StyleContainer
+        styles={{
+          width: "50%",
+          margin: "auto",
+          padding: "20px",
+          backgroundColor: "gray",
+          textAlign: "center",
+          color: "white",
         }}
       />
     </div>
