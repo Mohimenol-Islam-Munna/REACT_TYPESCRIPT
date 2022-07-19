@@ -7,11 +7,11 @@ type PersonProps = {
   };
 };
 
-function Person(props: PersonProps) {
+function Person({ name }: PersonProps) {
   return (
     <div>
-      <h2>
-        Person Info : {props.name.firstName} {props.name.lastName}
+      <h2 className="text-red-500 text-3xl">
+        Person Info : {name.firstName} {name.lastName}
       </h2>
     </div>
   );
