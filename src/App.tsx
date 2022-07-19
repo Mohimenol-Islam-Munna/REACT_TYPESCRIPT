@@ -5,6 +5,7 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const names = [
@@ -32,6 +33,7 @@ function App() {
       <Greet name="Mohimenol Munna" count={18} isAdmin={false} />
       <Person name={{ firstName: "Islam", lastName: "Munna" }} />
       <PersonList names={names} />
+      <Status status="success" />
     </div>
   );
 }

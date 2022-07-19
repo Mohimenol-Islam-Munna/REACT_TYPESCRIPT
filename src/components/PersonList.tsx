@@ -8,7 +8,7 @@ type PersonListProps = {
 
 function PersonList(props: PersonListProps) {
   return (
-    <div>
+    <div className="border border-green-700 p-5 mt-1">
       <h2>Person List</h2>
       {props.names.map((name) => (
         <div>
