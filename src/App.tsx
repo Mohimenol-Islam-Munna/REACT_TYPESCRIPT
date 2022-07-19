@@ -6,6 +6,7 @@ import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import Heading from "./components/Heading";
 
 function App() {
   const names = [
@@ -34,6 +35,7 @@ function App() {
       <Person name={{ firstName: "Islam", lastName: "Munna" }} />
       <PersonList names={names} />
       <Status status="success" />
+      <Heading>Heading Childreen Props</Heading>
     </div>
   );
 }
