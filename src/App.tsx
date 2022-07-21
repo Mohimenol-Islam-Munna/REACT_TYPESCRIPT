@@ -10,7 +10,8 @@ import Heading from "./components/Heading";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import StyleContainer from "./components/StyleContainer";
-import StateComponent from "./components/StateComponent";
+import StateComponent from "./components/hooks/StateComponent";
+import Parent from "./components/hooks/context/Parent";
 
 function App() {
   const names = [
@@ -68,6 +69,7 @@ function App() {
       />
 
       <StateComponent />
+      <Parent />
     </div>
   );
 }
