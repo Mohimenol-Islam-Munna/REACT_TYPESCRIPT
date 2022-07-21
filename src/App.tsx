@@ -13,6 +13,7 @@ import StyleContainer from "./components/StyleContainer";
 import StateComponent from "./components/hooks/state/StateComponent";
 import Parent from "./components/hooks/context/Parent";
 import Domref from "./components/hooks/ref/Domref";
+import GenericsMain from "./components/generics/GenericsMain";
 
 function App() {
   const names = [
@@ -72,6 +73,8 @@ function App() {
       <StateComponent />
       <Parent />
       <Domref />
+
+      <GenericsMain />
     </div>
   );
 }
