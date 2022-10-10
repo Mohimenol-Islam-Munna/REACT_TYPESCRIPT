@@ -73,7 +73,6 @@ function App() {
       <StateComponent />
       <Parent />
       <Domref />
-
       <GenericsMain />
     </div>
   );

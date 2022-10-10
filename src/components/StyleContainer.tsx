@@ -1,5 +1,4 @@
 import React from "react";
-import { Style } from "util";
 type StyleContainerProps = {
   styles: React.CSSProperties;
 };
